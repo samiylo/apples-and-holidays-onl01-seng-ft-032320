@@ -68,8 +68,8 @@ def all_supplies_in_holidays(holiday_hash)
 
     holidays.each do |holiday, items|
       empty = ""
-      items.each do |item|
-        empty << "#{item}"
+      empty << item.join(" ")
+      
       end
       puts  "#{holiday.capitalize.to_s}: #{empty}"
 
